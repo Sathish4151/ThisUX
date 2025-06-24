@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lucida Console", "Courier New", monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 20px 0;
+    
+}
+
+header .logo {
+    font-size: 28px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: 600;
+    
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    padding: 43.5px;
+    width: calc(33.333% - 20px);
+    margin: 10px 0;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    /* background-color: #000000; */
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+}
+footer p {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: inherit;
+}
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 32px auto;
+    background: #fff;
+    border-radius: 32px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    padding: 10px;
+    width: fit-content;
+}
+
+.search-container input[type="text"] {
+    padding: 10px 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 32px 0 0 32px;
+    outline: none;
+    width: 360px;
+    transition: box-shadow 0.2s;
+    background: transparent;
+}
+
+.search-container input[type="text"]:focus {
+    box-shadow: 0 0 0 2px #000;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    border-radius: 0 32px 32px 0;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.search-container button:hover {
+    background-color: #333;
+}
+.imgs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 32px;
+    padding: 24px;
+    justify-items: center;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 24px;
+    text-align: center;
+    transition: transform 0.2s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.card img,
+.card video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
